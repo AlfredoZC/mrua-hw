@@ -1,5 +1,4 @@
 ﻿
-
             Console.WriteLine("Calculadora de MRUA");
             Console.Write("Ingrese la velocidad inicial (m/s): ");
             double velocidadInicial = Convert.ToDouble(Console.ReadLine());
@@ -13,6 +12,8 @@
             double distancia = velocidadInicial * tiempo + 0.5 * aceleracion * Math.Pow(tiempo, 2);
             Console.WriteLine($"La distancia recorrida es: {distancia} metros");
 
-            double yardas = distancia * 1093.61;
-            Console.WriteLine($"La distancia recorrida es: {yardas} yardas");
+            double metros = distancia / 1000;
+            double yardas = metros * 39.3701;
+            Console.WriteLine($"La distancia recorrida es: {yardas} en yardas");
+
             
