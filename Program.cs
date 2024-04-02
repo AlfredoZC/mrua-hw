@@ -1,19 +1,17 @@
 ﻿
-            Console.WriteLine("Calculadora de MRUA");
-            Console.Write("Ingrese la velocidad inicial (m/s): ");
-            double velocidadInicial = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Ingrese el ancho lote ");
+            int ancho = int.Parse(Console.ReadLine());
+            Console.Write("Ingrese el largo lote ");
+            int largo = int.Parse(Console.ReadLine());
 
-            Console.Write("Ingrese la aceleración (m/s^2): ");
-            double aceleracion = Convert.ToDouble(Console.ReadLine());
+            double precio = 20.0;
 
-            Console.Write("Ingrese el tiempo (s): ");
-            double tiempo = Convert.ToDouble(Console.ReadLine());
+            int area = ancho * largo; 
+            Console.WriteLine($"El area es: {area} m^2");
+            Console.WriteLine($"Se multiplicara el area que es {area} por el precio que es {precio}$ por metro^2");
+            double precio_total =  precio * area;
+            Console.WriteLine($"El precio del lote es: {precio_total} por m^2");
 
-            double distancia = velocidadInicial * tiempo + 0.5 * aceleracion * Math.Pow(tiempo, 2);
-            Console.WriteLine($"La distancia recorrida es: {distancia} metros");
 
-            double metros = distancia / 1000;
-            double yardas = metros * 39.3701;
-            Console.WriteLine($"La distancia recorrida es: {yardas} en yardas");
 
             
