@@ -11,6 +11,7 @@
             Console.WriteLine($"Se multiplicara el area que es {area} por el precio que es {precio}$ por metro^2");
             double precio_total =  precio * area;
             Console.WriteLine($"El precio del lote es: {precio_total} por m^2");
+            
 
 
 
